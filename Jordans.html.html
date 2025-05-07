@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jordan’s Ways of Cooking</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: url('images/back.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    header img {
+      width: 120px;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      z-index: 1;
+      margin-top: 20px;
+    }
+
+    nav {
+      background: #222;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f4a261;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .menu-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .menu-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .delivery {
+      background-color: #f8f8f8;
+      border-left: 5px solid #f4a261;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #222;
+      color: #ddd;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #20b858;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <!-- Font Awesome for WhatsApp Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/logo.jpg" alt="Jordan's Logo" />
+    <h1>SIBONISO SOLDAKA AKA THE ELITE ATHLET</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#delivery">Delivery Info</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      <strong>Ntlalo Jordan</strong>, CEO and founder of <strong>Jordan’s Ways of Cooking</strong>, is a proud resident of Langa Township. Our restaurant offers a unique blend of African and Western cuisine, delivering gourmet-quality meals to families and individuals across Cape Town.
+    </p>
+    <p>
+      Since opening our doors, we’ve become a staple in the Langa community — not just for our delicious food, but for the warm, family-friendly environment we provide. Jordan’s Ways of Cooking is more than just a restaurant; we are a community builder.
+    </p>
+    <p>
+      We take pride in supporting the youth of Langa by offering opportunities and inspiration through employment and mentorship. Our establishment actively partners with local small businesses, supports local vendors, and participates in charitable activities throughout the township.
+    </p>
+    <p>
+      At Jordan’s Ways of Cooking, food is just the beginning. We are proud to be part of Langa’s story — serving flavor, family, and future.
+    </p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section">
+    <h2>Our Delicious Menu</h2>
+    <div class="menu-gallery">
+      <img src="images/menu1.jpg" alt="Menu 1">
+      <img src="images/menu2.jpg" alt="Menu 2">
+      <img src="images/menu3.jpg" alt="Menu 3">
+      <img src="images/menu4.jpg" alt="Menu 4">
+      <img src="images/menu5.jpg" alt="Menu 5">
+      <img src="images/menu6.jpg" alt="Menu 6">
+      <img src="images/menu7.jpg" alt="Menu 7">
+    </div>
+  </section>
+
+  <!-- Delivery Section -->
+  <section id="delivery" class="section">
+    <h2>Delivery in Langa, Cape Town</h2>
+    <div class="delivery">
+      <p>We deliver fresh, home-cooked meals right to your doorstep in Langa and surrounding areas. Fast, safe, and delicious!</p>
+      <ul>
+        <li>🛵 Delivery hours: 10 AM – 9 PM</li>
+        <li>📍 Langa, Cape Town</li>
+        <li>💵 Cash & mobile money accepted</li>
+        <li>📞 <a href="https://wa.me/27712345678?text=Hi%20Jordan!%20I%20want%20to%20place%20an%20order" target="_blank">Order on WhatsApp: +27 71 234 5678</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Whether it's feedback, orders, or custom catering – we’ve got you covered.</p>
+    <p><strong>Phone:</strong> +27 71 234 5678</p>
+    <p><strong>Email:</strong> orders@jordanscooking.co.za</p>
+    <p><strong>Instagram:</strong> @jordans_way</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/27712345678?text=Hi%20Jordan!%20I%20want%20to%20order%20some%20food" target="_blank">Chat Now</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Jordan’s Ways of Cooking • Built with ❤️ in Langa
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/27712345678?text=Hi%20Jordan!%20I%20want%20to%20order%20some%20food" 
+     class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
